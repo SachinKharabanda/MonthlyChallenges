@@ -1,0 +1,32 @@
+#format
+#challenge-id:
+# message: "string"
+prefix: "&8[&6&lCHALLENGES&8]&f"
+
+system-messages:
+  reload: "You have reloaded the config."
+  reset: "You have reset {targets} progress."
+  boost: "You have boosted {targets} stats by {boost} for challenge {id}."
+  reduced: "You have reduced {targets} stats by {reduce} for challenge {id}."
+
+challenge-messages:
+  1:
+    challenge-completed: "{prefix} You have already completed this challenge."
+    challenge-remaining: "{prefix} You still have to loot &6{chests_remaining}&f chests before marking this challenge as complete!"
+    challenge-complete: "{prefix} Congratulations! You have looted 1000 chests and have received a &b&l&nRARE CRATE KEY&F as a prize."
+  2:
+    challenge-completed: "{prefix} You have already completed this challenge."
+    challenge-remaining: "{prefix} You still have to kill &6{criminals_remaining} &fcriminals before marking this challenge as complete!"
+    challenge-complete: "{prefix} Congratulations! You have killed 1000 NPC Criminals and have received a &c&l&nLEGENDARY CRATE KEY&F as a prize."
+  3:
+    challenge-completed: "{prefix} You have already completed this challenge."
+    challenge-remaining: "{prefix} You still have to kill &6{cops_remaining} &fcops before marking this challenge as complete!"
+    challenge-complete: "{prefix} Congratulations! You have killed 100 NPC cops and have received a &d&l&nMYTHICAL CRATE KEY&F as a prize."
+  4:
+    challenge-completed: "{prefix} You have already completed this challenge."
+    challenge-remaining: "{prefix} You still have to kill &6{kills_remaining} &fplayers before marking this challenge as complete!"
+    challenge-complete: "{prefix} Congratulations! You have killed 50 players and have received a &a$20000&F as a prize."
+  5:
+    challenge-completed: "{prefix} You have already completed this challenge."
+    challenge-remaining: "{prefix} You still have to get &6${money_remaining} &fbefore marking this challenge as complete!"
+    challenge-complete: "{prefix} Congratulations! You have got $50000 and have received &cKit God&F as a prize."

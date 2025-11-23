@@ -1,0 +1,70 @@
+#menu layout
+menu-size: 27
+close-menu-upon-interact: true
+menu-items:
+  "loot 1000 chests":
+    challenge-id: 1
+    material: PLAYER_HEAD
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmY1NjhkZDgwODIwNjU3NTU0ZjliNDVkYjAzMWQyMmNkOWI3ZDE2MWMxOTgyNzczYjFiMzU4NTRjOTkzOTgyNCJ9fX0=
+    position: 12
+    display-name: "&eLoot 1000 chests"
+    display-lore:
+      - "&e&L❙ &FLoot 1000 chests across"
+      - "&e&L❙ &Fthe main city and battle"
+      - "&e&L❙ &Fcity."
+      - ""
+      - "&e&L❙ &FProgress: &e{chests_looted}&f/&e{chests_to_be_looted}"
+      - "&e&L❙ &FReward: &b&l&nRARE CRATE KEY"
+    reward-console-command: "cc give p Rare 1 {player}"
+  "kill 1000 npc criminals":
+    challenge-id: 2
+    material: PLAYER_HEAD
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWVmZDdiMWY0NzE2ZGU3MzNiZTE4OTdhYzk3ODUxYjM0YjNhYWJiYTNlM2NhMDA3Yjg4NDRiNzdiOTlmOGFjNSJ9fX0=
+    position: 13
+    display-name: "&eKill 1000 NPC Criminals"
+    display-lore:
+      - "&e&L❙ &fKill 1000 NPC Criminals"
+      - "&e&L❙ &facross the main city and"
+      - "&e&L❙ &Fbattle city."
+      - ""
+      - "&e&L❙ &FProgress: &e{criminals_killed}&f/&e{criminals_to_be_killed}"
+      - "&e&L❙ &FReward: &c&l&nLEGENDARY CRATE KEY"
+    reward-console-command: "cc give p Legendary 1 {player}"
+  "kill 100 npc cops":
+    challenge-id: 3
+    material: PLAYER_HEAD
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzFhZTdjOTAxZjI0NDVkNmI4N2ZlMGE1MzVlMWY3YTllZWU4NjRmYWVhNzUyNTQ0YmU2NWEzNGNkNWFlNDMzNyJ9fX0=
+    position: 14
+    display-name: "&eKill 100 NPC Cops"
+    display-lore:
+      - "&e&L❙ &fKill 100 NPC Cops."
+      - ""
+      - "&e&L❙ &FProgress: &e{cops_killed}&f/&e{cops_to_be_killed}"
+      - "&e&L❙ &FReward: &d&l&nMYTHICAL CRATE KEY"
+    reward-console-command: "cc give p Mythical 1 {player}"
+  "get 50 kills":
+    game-id: 4
+    material: PLAYER_HEAD
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjAwZTdiMzNlZTJhNjAwMjc1OGFjZmUwOGM3ZGY2YmQzN2E0OTdkYzlmODAwMGMzY2E5ODI0YTJjZmFiY2FkZCJ9fX0=
+    position: 15
+    display-name: "&eKill 50 players"
+    display-lore:
+      - "&e&L❙ &fKill 50 players."
+      - ""
+      - "&e&L❙ &FProgress: &e{players_killed}&f/&e{players_to_be_killed}"
+      - "&e&L❙ &FReward: &a$20000"
+    reward-console-command: "eco give {player} 20000"
+  "get $50000":
+    challenge-id: 5
+    material: PLAYER_HEAD
+    value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjA5Mjk5YTExN2JlZTg4ZDMyNjJmNmFiOTgyMTFmYmEzNDRlY2FlMzliNDdlYzg0ODEyOTcwNmRlZGM4MWU0ZiJ9fX0=
+    position: 16
+    display-name: "&eGet a balance of $50000"
+    display-lore:
+      - "&e&L❙ &fOnce you have a balance of"
+      - "&e&L❙ &f$50000 click here, to"
+      - "&e&L❙ &freceive your reward."
+      - ""
+      - "&e&L❙ &fBalance: &e${balance_formatted}"
+      - "&e&L❙ &FReward: &cKit God"
+    reward-console-command: "kit god {player}"
