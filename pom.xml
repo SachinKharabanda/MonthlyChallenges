@@ -51,18 +51,77 @@
     </build>
 
     <repositories>
+
         <repository>
             <id>papermc-repo</id>
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
+
+        <repository>
+            <id>nexus</id>
+            <name>Lumine Releases</name>
+            <url>https://mvn.lumine.io/repository/maven-public/</url>
+        </repository>
+
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
     </repositories>
 
     <dependencies>
+
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
             <version>1.21.4-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>dev.triumphteam</groupId>
+            <artifactId>triumph-gui</artifactId>
+            <version>3.1.13</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.lumine</groupId>
+            <artifactId>Mythic-Dist</artifactId>
+            <version>5.6.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.51.0.0</version>
+        </dependency>
+
+        <!-- Local plugin jars in src/lib -->
+
+        <dependency>
+            <groupId>me.sachin</groupId>
+            <artifactId>Cops</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/lib/Cops.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>me.sachin</groupId>
+            <artifactId>PhatLoots</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/lib/PhatLoots.jar</systemPath>
+        </dependency>
+
     </dependencies>
 </project>

@@ -1,4 +1,47 @@
 name: DecemberChallenges
-version: '1.0-SNAPSHOT'
+version: '1.0'
 main: me.sachin.decemberChallenges.DecemberChallenges
 api-version: '1.21'
+description: Monthly challenges plugin for December
+author: Sachin
+website: https://yourserver.com
+
+# Soft dependencies - plugin will work without these but features may be disabled
+softdepend:
+  - PhatLoots
+  - MythicMobs
+  - Cops
+  - Vault
+  - SimpleStatistics
+
+commands:
+  challenges:
+    description: Open December challenges menu or manage challenges
+    usage: |
+      /<command> - Open challenges GUI
+      /<command> reload - Reload configuration files
+    permission: challenges.use
+    permission-message: §cYou don't have permission to use this command!
+    aliases: [challenge, monthlychallenge, mc]
+
+permissions:
+  challenges.*:
+    description: Grants all challenge permissions
+    default: op
+    children:
+      challenges.use: true
+      challenges.admin: true
+
+  challenges.use:
+    description: Allows players to use /challenges command and view challenges
+    default: true
+
+  challenges.admin:
+    description: Allows admins to reload config and manage challenges
+    default: op
+    children:
+      challenges.reload: true
+
+  challenges.reload:
+    description: Allows reloading the plugin configuration
+    default: op
